@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Shopping App</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <h3>Product 1</h3>
+                <p>Price: $10</p>
+                <button class="add-to-cart" data-name="Product 1" data-price="10">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product 2</h3>
+                <p>Price: $15</p>
+                <button class="add-to-cart" data-name="Product 2" data-price="15">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product 3</h3>
+                <p>Price: $20</p>
+                <button class="add-to-cart" data-name="Product 3" data-price="20">Add to Cart</button>
+            </div>
+        </div>
+
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+        <button id="clear-cart">Clear Cart</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
